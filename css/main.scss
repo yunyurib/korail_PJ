@@ -1,0 +1,215 @@
+/* Common CSS */
+.inner {
+  width: 1280px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  position: absolute;
+  width: 100%;
+  transition: 0.5s;
+  z-index: 10000;
+}
+.header-lnb {
+  display: flex;
+  justify-content: space-between;
+  color: #ccc;
+  font-size: 0.7rem;
+  padding: 10px 0px;
+}
+.header-lnb__list {
+  display: flex;
+  color: #ccc;
+  font-size: 0.7rem;
+}
+.header-lnb__item::after {
+  content: "/";
+  display: inline-block;
+}
+.header-lnb__item {
+  padding: 0px 3px;
+  transition: 0.5s;
+}
+.header-lnb__item:hover a {
+  color: #fff;
+  font-weight: bold;
+}
+.skip {
+  display: none;
+}
+#searchTerm,
+#searchTermBu {
+  border: 1px solid #ccc !important;
+  background-color: rgba(228, 228, 228, 0);
+  border-radius: 5em;
+  color: #ccc;
+}
+#searchTerm::placeholder {
+  color: #ccc;
+  padding: 5px;
+}
+.header-gnb {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 10px 0px;
+  font-weight: bold;
+}
+.header-gnb__item {
+  padding: 0px 10px;
+  transition: 0.5s;
+}
+.header-gnb__item:hover {
+  text-decoration: underline;
+  color: #e7cb2e;
+}
+.header-gnb__link {
+  display: block;
+}
+/* main */
+.maincont-slider {
+  position: relative;
+  width: 100%;
+  height: 590px;
+  background-color: beige;
+  overflow: hidden;
+}
+.maincont-slider__list {
+  display: flex;
+  width: 300%;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.abtn {
+  position: absolute;
+  top: 45%;
+}
+.abtn > i {
+  font-size: 3em;
+  color: #fff;
+}
+.bL {
+  left: 1em;
+}
+.bR {
+  right: 1em;
+}
+#indic {
+  position: absolute;
+  bottom: 30px;
+  left: 47%;
+  display: flex;
+}
+#indic li {
+  width: 13px;
+  height: 13px;
+  cursor: pointer; /*손가락표시*/
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin: 3px;
+}
+.showit {
+  background-color: #fff !important;
+}
+.maincont-slider__item {
+  width: 100%;
+  height: 590px;
+}
+.maincont-slider__item:first-child {
+  background-image: url("../image/maincont-slider_01.jpg");
+  background-position: center;
+}
+.maincont-slider__item:nth-child(2) {
+  background-image: url("../image/maincont-slider_02.jpg");
+  background-position: center;
+}
+.maincont-slider__item:last-child {
+  background-image: url("../image/maincont-slider_03.jpg");
+  background-position: center;
+}
+.maincont-service {
+  background-color: #e8e8e8;
+  padding: 50px 0;
+}
+.maincont-service__list {
+  // display: flex;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-auto-flow: dense;
+}
+.maincont-service__item {
+  height: 250px;
+  overflow: hidden;
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+  position: relative;
+  transition: 0.5s;
+}
+.maincont-service__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.198);
+}
+.maincont-service__item > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+}
+.maincont-service__item > a > p {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 30px;
+  z-index: 99;
+}
+.maincont-service__item > a > img {
+  position: absolute;
+  opacity: 0.5;
+  height: 100%;
+}
+.maincont-service__item > a > p > span {
+  display: block;
+  font-size: 1rem;
+}
+.bar {
+  margin: 5px auto;
+  width: 70px;
+  height: 4px;
+  background-color: darkorange;
+}
+.maincont-service__item:first-child,
+.maincont-service__item:nth-child(5),
+.maincont-service__item__sm {
+  background-color: #fff;
+}
+.maincont-service__item:nth-child(2),
+.maincont-service__item:nth-child(3),
+.maincont-service__item:nth-child(4),
+.maincont-service__item:nth-child(6) {
+  background-color: #000;
+  color: #fff;
+}
+.maincont-service__item:nth-child(3) {
+  grid-column-end: span 4;
+  grid-row-end: span 4;
+  height: 500px;
+}
+.maincont-service__item:nth-child(6) {
+  grid-column-end: span 4;
+  grid-row-end: span 4;
+}
+.maincont-service__item:nth-child(6) > a > img {
+  height: auto;
+  width: 100%;
+}
+.maincont-service__item__sm {
+  height: 125px;
+}
