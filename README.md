@@ -12,4 +12,4 @@
 
 ### Links
 
-- Link : [View](https://xururuca9797.github.io/korail_PJ/)
+- Link : [View](https://yunyurib.github.io/korail_PJ/)
